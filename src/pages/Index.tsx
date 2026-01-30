@@ -1,6 +1,6 @@
 import { useState } from "react";
 import FloatingHearts from "@/components/FloatingHearts";
-import StarryBackground from "@/components/StarryBackground";
+import Background3D from "@/components/Background3D";
 import CursorHearts from "@/components/CursorHearts";
 import HeroSection from "@/components/HeroSection";
 import LoveLetter from "@/components/LoveLetter";
@@ -20,7 +20,7 @@ const Index = () => {
       {!hasEntered && <WelcomeOverlay onEnter={() => setHasEntered(true)} />}
       
       <div className={`transition-opacity duration-700 ${hasEntered ? 'opacity-100' : 'opacity-0'}`}>
-        <StarryBackground />
+        <Background3D />
         <CursorHearts />
         <FloatingHearts />
         <HeroSection />
