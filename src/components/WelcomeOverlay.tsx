@@ -11,59 +11,29 @@ const WelcomeOverlay = ({ onEnter }: WelcomeOverlayProps) => {
   const [musicReady, setMusicReady] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // Pre-generate music on component mount
+  // Use a beautiful royalty-free piano track (ElevenLabs Music API requires paid plan)
   useEffect(() => {
-    const generateMusic = async () => {
-      try {
-        console.log("Generating romantic piano music...");
-        const response = await fetch(
-          `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/generate-music`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              apikey: import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY,
-              Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
-            },
-            body: JSON.stringify({
-              prompt: "Calm romantic piano music, soft and tender love theme, gentle peaceful melody, wedding style, emotional and heartfelt, solo piano",
-              duration: 120,
-            }),
-          }
-        );
+    // Romantic piano music - royalty free
+    const pianoMusicUrl = "https://cdn.pixabay.com/audio/2024/02/14/audio_08c65c5d0f.mp3";
+    
+    audioRef.current = new Audio(pianoMusicUrl);
+    audioRef.current.loop = true;
+    audioRef.current.volume = 0.4;
+    audioRef.current.preload = "auto";
+    
+    audioRef.current.addEventListener("canplaythrough", () => {
+      setMusicReady(true);
+      console.log("Piano music ready to play!");
+    });
 
-        const data = await response.json();
-        
-        if (data.success && data.audioContent) {
-          const audioUrl = `data:audio/mpeg;base64,${data.audioContent}`;
-          audioRef.current = new Audio(audioUrl);
-          audioRef.current.loop = true;
-          audioRef.current.volume = 0.4;
-          setMusicReady(true);
-          console.log("Music ready to play!");
-        } else {
-          console.error("Music generation failed:", data.error);
-          // Fallback to static music
-          audioRef.current = new Audio(
-            "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-          );
-          audioRef.current.loop = true;
-          audioRef.current.volume = 0.3;
-          setMusicReady(true);
-        }
-      } catch (error) {
-        console.error("Error generating music:", error);
-        // Fallback to static music
-        audioRef.current = new Audio(
-          "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-        );
-        audioRef.current.loop = true;
-        audioRef.current.volume = 0.3;
-        setMusicReady(true);
-      }
-    };
-
-    generateMusic();
+    audioRef.current.addEventListener("error", (e) => {
+      console.error("Audio loading error:", e);
+      // Fallback
+      audioRef.current = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3");
+      audioRef.current.loop = true;
+      audioRef.current.volume = 0.3;
+      setMusicReady(true);
+    });
   }, []);
 
   const handleEnter = async () => {
