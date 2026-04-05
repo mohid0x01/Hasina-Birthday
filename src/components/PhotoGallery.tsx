@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Heart, Camera, ImagePlus, Upload, X, Loader2, GripVertical } from "lucide-react";
+import { Heart, Camera, Upload, X, Loader2, GripVertical } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import {
