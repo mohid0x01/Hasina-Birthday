@@ -11,25 +11,25 @@ const WelcomeOverlay = ({ onEnter }: WelcomeOverlayProps) => {
   const [musicReady, setMusicReady] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // Use a beautiful royalty-free piano track (ElevenLabs Music API requires paid plan)
+  // Calm romantic piano music
   useEffect(() => {
-    // Romantic piano music - royalty free
-    const pianoMusicUrl = "https://cdn.pixabay.com/audio/2024/02/14/audio_08c65c5d0f.mp3";
+    // Soft, gentle romantic piano - royalty free
+    const pianoMusicUrl = "https://cdn.pixabay.com/audio/2022/03/24/audio_37e9e5e004.mp3";
     
     audioRef.current = new Audio(pianoMusicUrl);
     audioRef.current.loop = true;
-    audioRef.current.volume = 0.4;
+    audioRef.current.volume = 0.35;
     audioRef.current.preload = "auto";
     
     audioRef.current.addEventListener("canplaythrough", () => {
       setMusicReady(true);
-      console.log("Piano music ready to play!");
+      console.log("Calm piano music ready to play!");
     });
 
     audioRef.current.addEventListener("error", (e) => {
       console.error("Audio loading error:", e);
-      // Fallback
-      audioRef.current = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3");
+      // Fallback - another calm piano track
+      audioRef.current = new Audio("https://cdn.pixabay.com/audio/2023/09/04/audio_9efe4a08d6.mp3");
       audioRef.current.loop = true;
       audioRef.current.volume = 0.3;
       setMusicReady(true);
