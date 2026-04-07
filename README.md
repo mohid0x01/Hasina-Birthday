@@ -1,73 +1,58 @@
-# Welcome to your Lovable project
+# 💕 Hasina's Birthday Website
 
-## Project info
+A romantic, interactive birthday website crafted with love by **Mohid** for **Hasina**.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## ✨ Features
 
-## How can I edit this code?
+- **Welcome Overlay** — A beautiful entry screen with romantic piano music
+- **3D Background** — Floating roses, animated ribbons, and particle effects using Three.js
+- **Memory Timeline** — Key relationship milestones from April 2022 to present
+- **Love Letter & Poem** — Heartfelt messages written just for her
+- **Photo Gallery** — Upload, drag & drop, and manage photos with captions
+- **Birthday Countdown** — Live countdown to October 1st
+- **Floating Hearts & Cursor Effects** — Romantic animations throughout
+- **Surprise Button** — Confetti and special birthday wishes
+- **Reasons I Love You** — A curated list of reasons she's loved
 
-There are several ways of editing your application.
+## 🛠 Tech Stack
 
-**Use Lovable**
+- **React 18** + **TypeScript**
+- **Vite 5** — Lightning-fast dev server
+- **Tailwind CSS v3** — Utility-first styling
+- **Three.js** / **React Three Fiber** — 3D background effects
+- **shadcn/ui** — Accessible UI components
+- **Lovable Cloud** — Backend for photo storage and data persistence
+- **Framer Motion** — Smooth animations
+- **Lucide Icons** — Beautiful icon set
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## 🚀 Getting Started
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Navigate to the project
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the dev server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 💖 Key Milestones
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+| Date | Milestone |
+|------|-----------|
+| April 13, 2022 | The Day Mohid Fell in Love |
+| May 2022 | First Date |
+| October 1, 2022 | First Birthday Together |
+| February 14, 2023 | First Valentine's Day |
+| April 13, 2023 | One Year of Loving Her |
+| October 1, 2023 | First Gift |
+| June 26, 2025 | The Day Hasina Fell in Love |
 
-**Use GitHub Codespaces**
+## 📝 License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Made with ❤️ — For Hasina's eyes only.

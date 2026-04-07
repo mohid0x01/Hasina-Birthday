@@ -17,11 +17,46 @@ const milestones: Milestone[] = [
     icon: "heart",
   },
   {
+    date: "May 2022",
+    title: "Our First Date",
+    description:
+      "Nervous hearts, shy smiles, and a connection that felt like it was written in the stars. That first date was the beginning of everything beautiful.",
+    icon: "star",
+  },
+  {
+    date: "October 1, 2022",
+    title: "Her First Birthday Together",
+    description:
+      "The first time I got to celebrate your special day. Every moment spent making you smile was worth more than anything in the world.",
+    icon: "sparkles",
+  },
+  {
+    date: "February 14, 2023",
+    title: "First Valentine's Day",
+    description:
+      "Our first Valentine's — a day dedicated to love, but every day with you already felt like Valentine's Day.",
+    icon: "heart",
+  },
+  {
+    date: "April 13, 2023",
+    title: "One Year of Loving You",
+    description:
+      "365 days of carrying you in my heart. A whole year of loving you silently, deeply, and unconditionally.",
+    icon: "star",
+  },
+  {
+    date: "October 1, 2023",
+    title: "First Gift for Her",
+    description:
+      "Choosing the perfect gift for you — something that could capture even a fraction of what you mean to me. Your smile when you received it made everything worth it.",
+    icon: "sparkles",
+  },
+  {
     date: "June 26, 2025",
     title: "The Day She Fell in Love",
     description:
       "The most magical day — when you finally felt the same. My heart had waited patiently, and that day, it was rewarded with the most beautiful gift: your love.",
-    icon: "sparkles",
+    icon: "heart",
   },
 ];
 
