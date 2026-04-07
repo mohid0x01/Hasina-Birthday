@@ -14,7 +14,7 @@ const WelcomeOverlay = ({ onEnter }: WelcomeOverlayProps) => {
   // Calm romantic piano music
   useEffect(() => {
     // Soft, gentle romantic piano - royalty free
-    const pianoMusicUrl = "https://cdn.pixabay.com/audio/2022/03/24/audio_37e9e5e004.mp3";
+    const pianoMusicUrl = "https://cdn.pixabay.com/audio/2022/01/18/audio_d0a13f69d2.mp3";
     
     audioRef.current = new Audio(pianoMusicUrl);
     audioRef.current.loop = true;
