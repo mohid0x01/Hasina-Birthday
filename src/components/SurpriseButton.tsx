@@ -65,7 +65,7 @@ const SurpriseButton = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-background relative">
+    <section className="py-20 px-4 bg-background/80 backdrop-blur-sm relative">
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-primary/5 blur-3xl" />
       

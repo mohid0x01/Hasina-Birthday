@@ -25,7 +25,7 @@ const wishes = [
 
 const WishesSection = () => {
   return (
-    <section className="py-24 px-4 bg-background relative">
+    <section className="py-24 px-4 bg-background/80 backdrop-blur-sm relative">
       {/* Subtle background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-primary/5 blur-3xl rounded-full" />
       
