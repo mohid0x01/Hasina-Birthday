@@ -151,7 +151,7 @@ const WelcomeOverlay = ({ onEnter }: WelcomeOverlayProps) => {
           <div className="flex items-center justify-center gap-2 text-muted-foreground mb-10 animate-fade-in-up animation-delay-500">
             <Music className="w-4 h-4" />
             <span className="font-body text-sm tracking-wide">
-              {musicReady ? "Romantic piano music ready ♪" : "Preparing romantic music..."}
+              {musicReady ? "Happy Birthday music ready 🎂♪" : "Preparing birthday music..."}
             </span>
             {!musicReady && <Loader2 className="w-4 h-4 animate-spin" />}
           </div>
